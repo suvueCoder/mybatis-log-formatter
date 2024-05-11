@@ -64,17 +64,6 @@
             >
               Reset
             </button>
-            <!-- Dark Mode Toggle Button -->
-            <button
-              id="darkModeToggle"
-              class="rounded bg-gray-300 px-4 py-2 font-bold text-gray-800 hover:bg-gray-400 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
-            >
-              <i
-                id="darkModeIcon"
-                data-icon-dark="fa-moon"
-                data-icon-light="fa-sun"
-              ></i>
-            </button>
           </div>
         </div>
       </div>
@@ -109,7 +98,7 @@
           <!-- Content here -->
           <textarea
             id="sqlTextarea"
-            class="w-full h-full mt-2 px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 resize-none"
+            class="w-full h-full mt-2 px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 resize-none dark:text-amber-500"
             readonly
           ></textarea>
         </div>
@@ -120,7 +109,8 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/sql-formatter/11.0.2/sql-formatter.min.js"></script>
     <script>
 
-      const darkModeToggle = document.getElementById("darkModeToggle");
+      console.log("If you have any questions, please contact me at suvuemail@gmail.com.\n\nGood job!");
+
       const body = document.body;
       const navbar = document.getElementById("navbar");
       const title = document.getElementById("title");
@@ -131,35 +121,6 @@
       const rightCardContent = document.getElementById("rightCardContent");
       const copyButton = document.getElementById("copyButton");
       const sqlTextarea = document.getElementById("sqlTextarea");
-
-      // 根据当前主题设置图标
-      darkModeIcon.innerHTML = body.classList.contains("dark")
-        ? '<i class="fas fa-moon"></i>'
-        : '<i class="fas fa-sun"></i>';
-
-      darkModeToggle.addEventListener("click", () => {
-        // 切换主题
-        body.classList.toggle("dark");
-
-        // 切换图标
-        const icon = body.classList.contains("dark")
-          ? darkModeIcon.dataset.iconDark
-          : darkModeIcon.dataset.iconLight;
-        darkModeIcon.innerHTML = `<i class="fas ${icon}"></i>`;
-
-        // 切换导航栏背景和标题颜色
-        if (body.classList.contains("dark")) {
-          navbar.classList.remove("bg-white");
-          navbar.classList.add("bg-black");
-          title.classList.remove("text-gray-800");
-          title.classList.add("text-white");
-        } else {
-          navbar.classList.remove("bg-black");
-          navbar.classList.add("bg-white");
-          title.classList.remove("text-white");
-          title.classList.add("text-gray-800");
-        }
-      });
 
       convertButton.addEventListener("click", () => {
         const log = cardTextarea.value;
