@@ -6,7 +6,7 @@
   <div align="center">Supports mybatis log content parsing, merging and beautifying.~</div>
 </p>
 
-<img src="https://mybatis-log-converter-1259058935.cos.ap-beijing.myqcloud.com/mybatis-log-converter.png" width="900px" />
+<img src="https://mybatis-log-converter-1259058935.cos.ap-beijing.myqcloud.com/mybatis-log-converter-dark.png" width="900px" />
 
 ## How to use
 

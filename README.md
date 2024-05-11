@@ -6,7 +6,7 @@
   <div align="center">支持mybatis控制台日志内容解析、合并以及美化~</div>
 </p>
 
-<img src="https://mybatis-log-converter-1259058935.cos.ap-beijing.myqcloud.com/mybatis-log-converter.png" width="900px" />
+<img src="https://mybatis-log-converter-1259058935.cos.ap-beijing.myqcloud.com/mybatis-log-converter-dark.png" width="900px" />
 
 ## 如何使用
 
